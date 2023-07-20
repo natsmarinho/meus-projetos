@@ -1,1 +1,56 @@
 @import url("../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
+:root {
+    --orange: rgb(255, 81, 0);
+    --cream: rgb(255, 239, 183); 
+    --white: #ffffff;
+    --black: #000000;
+    --grey: rgb(166, 166, 166);
+}
+
+body {
+    background: var(--orange);
+    font-family: 'Inter', sans-serif;
+    line-height: normal;
+}
+
+.cabecalho {
+    background: var(--cream);
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 12px;
+}
+
+.about-me {
+    padding: 3rem ;
+}
+
+.cabecalho-titulo {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cabecalho-sub-titulo {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.list-stacks {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+path, clipPath {
+    fill: var(--black);
+    stroke: var(--black);
+}
+
+.seta {
+    cursor: pointer;
+    display: flex;
+    margin-left: 50%;
+}
