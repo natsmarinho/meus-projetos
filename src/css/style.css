@@ -20,7 +20,6 @@ body {
     background: var(--cream);
     margin: .5rem;
     border-radius: 12px;
-    
 }
 
 .about-me {
@@ -60,6 +59,7 @@ path {
     padding-top: 8rem;
     background: whitesmoke;
     padding-bottom: 4rem;
+    border-radius: 12px;
 }
 
 .apresentation {
