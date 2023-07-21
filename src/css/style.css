@@ -16,11 +16,11 @@ body {
     line-height: normal;
 }
 
-.cabecalho {
+.main-container {
     background: var(--cream);
-    padding: 1rem;
     margin: .5rem;
     border-radius: 12px;
+    
 }
 
 .about-me {
@@ -44,7 +44,7 @@ body {
     padding-bottom: 4rem;
 }
 
-path, clipPath {
+path {
     fill: var(--black);
     stroke: var(--black);
 }
@@ -53,4 +53,59 @@ path, clipPath {
     cursor: pointer;
     display: flex;
     margin-left: 50%;
+    padding-bottom: 2rem;
+}
+
+.projects-container {
+    padding-top: 8rem;
+    background: whitesmoke;
+    padding-bottom: 4rem;
+}
+
+.apresentation {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    align-items: center;
+}
+
+.apresentation h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.project-list {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.all-projects-btn {
+    background: var(--black);
+    color: var(--white);
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+    border-radius: 18px;
+}
+
+footer {
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+}
+
+.contact-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.twitter {
+    width: 40px;
 }
