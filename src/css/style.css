@@ -20,6 +20,7 @@ body {
     background: var(--cream);
     margin: .5rem;
     border-radius: 12px;
+    box-shadow: 60px -16px teal;
 }
 
 .about-me {
@@ -57,7 +58,7 @@ path {
 
 .projects-container {
     padding-top: 8rem;
-    background: whitesmoke;
+    background: rgba(255, 255, 255, 0.278);
     padding-bottom: 4rem;
     border-radius: 12px;
 }
@@ -108,4 +109,34 @@ footer h3 {
 
 .twitter {
     width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .cabecalho {
+        display: flex;
+    }
+
+    .cabecalho-titulo {
+        font-size: 2.5rem;
+    }
+
+    .about-me    {
+        width: 40%;
+    }
+
+    .my-stacks {
+        padding-top: 10rem;
+        padding-left: 10rem;
+    }
+
+   .list-stacks-item svg {
+        width: 5rem;
+        height: 70px;
+    }
 }
