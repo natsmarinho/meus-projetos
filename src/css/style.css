@@ -27,6 +27,10 @@ body {
     padding: 3rem ;
 }
 
+.cabecalho.active, footer.active, .main-container.active {
+    background: var(--black);
+}
+
 .cabecalho-titulo {
     font-weight: 700;
     font-size: 2rem;
@@ -36,6 +40,40 @@ body {
     padding-top: 2rem;
     font-size: 1.4rem;
 }
+
+.dark-mode.active {
+    color: var(--white);
+}
+
+.btn-mode {
+    width: 70px;
+    height: 20px;
+    border: 5px solid var(--black);
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    top: -15.5rem;
+    left: 80%;
+}
+
+.btn-mode.active {
+    border-color: var(--white);
+}
+
+
+
+.btn-mode:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
 
 .list-stacks {
     display: flex;
@@ -118,21 +156,41 @@ footer h3 {
 }
 
 @media screen and (min-width: 1220px) {
-    .cabecalho {
-        display: flex;
-    }
 
     .cabecalho-titulo {
         font-size: 2.5rem;
+        padding-right: 40rem;
     }
 
-    .about-me    {
-        width: 40%;
+    .btn-mode {
+        top: -8rem;
+        left: 85%;
+        width: 100px;
+        height: 40px;
+        border: 5px solid var(--black);
+        border-radius: 60px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn-mode:before {
+        content: "";
+        position: absolute;
+        width: 37px;
+        height: 35px;
+        background: var(--black);
+        border-radius: 50%;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+    }
+
+    .btn-mode:before.active {
+        background: #ffffff;
     }
 
     .my-stacks {
         padding-top: 10rem;
-        padding-left: 10rem;
     }
 
    .list-stacks-item svg {
