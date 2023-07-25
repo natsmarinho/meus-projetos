@@ -61,8 +61,7 @@ body {
 }
 
 
-
-.btn-mode:before {
+.btn-mode::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -72,6 +71,10 @@ body {
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
+}
+
+.btn-mode.active::before {
+    background: #ffffff;
 }
 
 
@@ -185,9 +188,6 @@ footer h3 {
         transform: translateY(-50%);
     }
 
-    .btn-mode:before.active {
-        background: #ffffff;
-    }
 
     .my-stacks {
         padding-top: 10rem;
