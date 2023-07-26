@@ -73,12 +73,14 @@ body.active {
     background: var(--black);
     border-radius: 50%;
     top: 50%;
-    left: 5px;
+    left: 2px;
     transform: translateY(-50%);
+    transition: left .5s;
 }
 
 .btn-mode.active::before {
     background: #ffffff;
+    left: 48px;
 }
 
 
@@ -196,6 +198,10 @@ footer h3 {
         top: 50%;
         left: 5px;
         transform: translateY(-50%);
+    }
+
+    .btn-mode.active::before {
+        left: 60px;
     }
 
 
