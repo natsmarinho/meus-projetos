@@ -16,11 +16,14 @@ body {
     line-height: normal;
 }
 
+body.active {
+    background: var(--black);
+}
+
 .main-container {
     background: var(--cream);
     margin: .5rem;
     border-radius: 12px;
-    box-shadow: 60px -16px teal;
 }
 
 .about-me {
@@ -29,6 +32,7 @@ body {
 
 .cabecalho.active, footer.active, .main-container.active {
     background: var(--black);
+    border-radius: 12px;
 }
 
 .cabecalho-titulo {
@@ -85,9 +89,19 @@ body {
     padding-bottom: 4rem;
 }
 
-path {
+svg path {
     fill: var(--black);
     stroke: var(--black);
+}
+
+#stacks-icon-html.active, #stacks-icon-css.active, #stacks-icon-js.active, #stacks-icon-github.active, .path-seta.active {
+    fill: var(--white);
+    stroke: var(--white);
+}
+
+#contact-github.active, #contact-linkedin.active, #contact-twitter.active {
+    fill: var(--white);
+    stroke: var(--white);
 }
 
 .seta {
@@ -146,10 +160,6 @@ footer h3 {
 .contact-list {
     display: flex;
     gap: 2rem;
-}
-
-.twitter {
-    width: 40px;
 }
 
 @media screen and (min-width: 768px) {
