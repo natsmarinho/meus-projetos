@@ -138,6 +138,12 @@ svg path {
     font-weight: 700;
 }
 
+.container-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .project-list {
     padding-left: 1rem;
     padding-bottom: 8rem;
