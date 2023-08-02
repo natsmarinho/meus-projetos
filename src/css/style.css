@@ -145,7 +145,7 @@ svg path {
 }
 
 .project-list {
-    padding-left: 1rem;
+    padding-left: 0;
     padding-bottom: 8rem;
     display: flex;
     justify-content: center;
@@ -154,7 +154,8 @@ svg path {
 
 .projects {
     min-width: 100%;
-    display: flex;
+    display: inline-block;
+    vertical-align: top;
     justify-content: center;
     align-items: center;
     transition: transform 0.5s ease;
