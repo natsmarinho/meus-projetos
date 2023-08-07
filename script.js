@@ -33,21 +33,28 @@ function changeTheme() {
 const btnNextProject = document.querySelector(".next-slider").addEventListener("click", proximoSlide);
 const projectList = document.querySelector(".project-list");
 const projectItem = document.querySelectorAll(".projects");
+
 let currentIndex = 0;
 
  function showSlide(index) {
     if (index < 0) {
-        currentIndex = projectItem.length - 1; // Volta para o último slide quando chega ao início.
-      } else if (index >= projectItem.length) {
-        currentIndex = 0; // Volta para o primeiro slide quando chega ao fim.
-      }
+      currentIndex = projectItem.length - 1;
+    } else if (index >= projectItem.length) {
+      currentIndex = 0;
+    }
 
-    projectList.style.transform = `translateX(-${currentIndex * 100}%)`;
+    projectItem.forEach((item, idx) => {
+      if (idx === currentIndex) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
   }
 
 function proximoSlide() {
-    currentIndex++;
-    showSlide(currentIndex);
+  currentIndex++;
+  showSlide(currentIndex);
 }
 
 showSlide(currentIndex);
