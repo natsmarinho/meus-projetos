@@ -31,6 +31,7 @@ function changeTheme() {
 
 
 const btnNextProject = document.querySelector(".next-slider").addEventListener("click", proximoSlide);
+const btnPrevProject = document.querySelector(".prev-slider").addEventListener("click", prevSlide);
 const projectList = document.querySelector(".project-list");
 const projectItem = document.querySelectorAll(".projects");
 
@@ -56,5 +57,8 @@ function proximoSlide() {
   currentIndex++;
   showSlide(currentIndex);
 }
-
+function prevSlide() {
+  currentIndex--;
+  showSlide(currentIndex);
+}
 showSlide(currentIndex);
